@@ -29,17 +29,23 @@ void setup() {
   int timesToBlink;
   timesToBlink = timesToBlink + 2 * 4;
 
-  if(timesToBlink > 4){
+  //if(timesToBlink > 4){
+    //digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+    //delay(1000);                      // wait for a second
+    //digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+    //delay(1000);       
+           
+  //}
+  //else{
+    //digitalWrite(LED_BUILTIN, HIGH);
+  //}
+
+  for(int i = 0; i < timesToBlink; i++){
     digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
     delay(1000);                      // wait for a second
     digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-    delay(1000);       
-           
+    delay(1000);                      // wait for a second
   }
-  else{
-    digitalWrite(LED_BUILTIN, HIGH);
-  }
-
 }
 
 // the loop function runs over and over again forever
